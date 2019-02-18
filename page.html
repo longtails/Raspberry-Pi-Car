@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/static/stylesheets/main.css">
+    <meta charset="UTF-8">
+    <title>CAR OP</title>
+    <style>
+
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .op{
+            width: 100%;
+            height: 100%;
+            background: white;
+            position: absolute;
+            top: 10%;
+            border-top: gray dotted;
+            border-bottom: gray dotted;
+            border-width: 1px;
+            text-align: center;
+        }
+       .button{
+           -webkit-appearance:button;
+           height: 40px;
+           width: 200px;
+
+        }
+        .bar{
+
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="bar">
+    <br>
+    操作台
+</div>
+
+<div class="op">
+    <form method="get" name="op">
+        <p class="a">
+            <br>
+            {{.IP}}
+            <br>
+            <br>
+            <input class="button" type="submit" name="action" value="forward">
+            <input class="button" type="submit" name="action" value="back">
+
+            <br>
+            <br>
+            <br>
+            <input class="button" type="submit" name="action" value="left">
+            <input class="button" type="submit" name="action" value="right">
+            <br>
+            <br>
+            <br>
+            <input class="button" type="submit" name="action" value="brake">
+        </p>
+
+    </form>
+</div>
+<body>
+</body>
+
+
